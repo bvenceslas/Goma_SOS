@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.android.brain.sosfind.login_client"
+        android:weightSum="1"
+>
+
+    <include
+            layout="@layout/activity_bar"
+            android:id="@+id/bar_login_chauff"
+    />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+    >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/sostof2"
+            />
+
+        <EditText
+                android:id="@+id/editlogin_chauff"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_mail_outline_black"
+                android:drawablePadding="10dp"
+                android:hint="Adresse mail"
+                android:inputType="textEmailAddress"
+        />
+
+        <EditText
+                android:id="@+id/editpassword_chauff"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_lock_outline"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Mot de passe"
+                android:inputType="textPassword"
+        />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+        >
+
+
+        </LinearLayout>
+
+        <Button
+                android:textColor="#fff"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/style_general_color_btn"
+                android:layout_marginTop="10dp"
+                android:text="Connexion"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnlogin_chauff"
+                android:layout_gravity="center"
+        />
+
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_login_chauffeur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/img_plus"
+    />
+
+
+</LinearLayout>

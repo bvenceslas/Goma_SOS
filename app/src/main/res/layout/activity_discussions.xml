@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.android.brain.sosfind.Views.discussions">
+
+    <include
+            layout="@layout/activity_bar"
+            android:id="@+id/bar_discussions"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/bar_discussions"
+    >
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Espace de discussion"
+                android:textSize="18sp"
+                android:textColor="@color/blue_dark"
+                android:id="@+id/id_head"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/blue_dark"
+                android:id="@+id/id_reponse"
+                android:layout_below="@+id/id_head"
+                android:layout_marginTop="20dp"
+                android:background="@color/lightgray"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Votre texte ici...."
+                android:textSize="14sp"
+                android:textColor="@color/blue_dark"
+                android:id="@+id/id_msg"
+                android:layout_below="@+id/id_reponse"
+                android:layout_marginTop="20dp"
+
+        />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/btn_msg_cancel"
+                android:layout_below="@+id/id_msg"
+        />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Envoyer"
+                android:layout_below="@+id/id_msg"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_msg_send"
+        />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

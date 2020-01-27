@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ASOSFind</string>
+    <string name="title_activity_act_login_client">act_login_civil</string>
+    <string name="title_activity_accueil_chauffeur">accueil_Agent_SOS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map_chauffeur_act">Map</string>
+    <string name="title_activity_map_chauffeur">Map</string>
+</resources>

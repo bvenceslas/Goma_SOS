@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.android.brain.sosfind.activity_commande">
+
+    <include
+            layout="@layout/activity_bar"
+            android:id="@+id/bar_commande_taxis"
+    />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+    >
+
+        <EditText
+                android:id="@+id/edit_id_destinateur"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="id_destinateur"
+                android:inputType="text"
+        />
+
+        <EditText
+                android:id="@+id/edit_depart"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_depart"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="localisation/place"
+                android:inputType="text"
+        />
+
+        <EditText
+                android:id="@+id/edit_destination"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_destination"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Commune"
+                android:inputType="text"
+        />
+
+        <EditText
+                android:id="@+id/edit_details_commande"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Détails sur l'alerte"
+                android:inputType="text"
+        />
+
+
+        <Button
+                android:textColor="#fff"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/style_general_color_btn"
+                android:layout_marginTop="40dp"
+                android:text="Demande de secours"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_add_commande"
+                android:layout_gravity="center"
+        />
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_activity_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="120dp"
+                android:src="@mipmap/ic_msg_icon"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.brain.sosfind">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sosicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.android.brain.sosfind.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.brain.sosfind.login_client" />
+        <activity android:name="com.android.brain.sosfind.login_chauff" />
+        <activity android:name="com.android.brain.sosfind.incription_client" />
+        <activity android:name="com.android.brain.sosfind.inscription_chauffeur" />
+        <activity android:name="com.android.brain.sosfind.acceuil_client" />
+        <activity
+            android:name="com.android.brain.sosfind.accueil_chauffeur"
+            android:label="@string/title_activity_accueil_chauffeur"
+            android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDxZY0TOX20RXGHr7o4QOrtSWtVfTjeVcU" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.android.brain.sosfind.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name="com.android.brain.sosfind.activity_commande" />
+        <activity android:name="com.android.brain.sosfind.activity_CustomerCall" />
+
+        <service android:name="com.android.brain.sosfind.Services.MyFirebaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.android.brain.sosfind.Services.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.android.brain.sosfind.map_chauffeur"
+            android:label="@string/title_activity_map_chauffeur" />
+        <activity android:name="com.android.brain.sosfind.mvt_passager" />
+        <activity android:name="com.android.brain.sosfind.Views.mvt_chauffeurs" />
+        <activity android:name="com.android.brain.sosfind.Views.discussions" />
+        <activity android:name="com.android.brain.sosfind.login_cl_m" />
+        <activity android:name="com.android.brain.sosfind.create_cl_mail"></activity>
+    </application>
+
+</manifest>

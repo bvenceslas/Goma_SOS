@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Vue normale" android:id="@+id/mnormale"/>
+    <item android:title="Vue Satelite" android:id="@+id/msatellite"/>
+    <item android:title="Discussions" android:id="@+id/mdiscussion"/>
+
+</menu>

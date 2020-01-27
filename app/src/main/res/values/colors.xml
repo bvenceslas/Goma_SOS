@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232f71</color>
+    <color name="colorPrimaryDark">#232f71</color>
+    <color name="colorAccent">#31260b</color>
+
+
+    <color name="blue_dark">#23283a</color>
+    <color name="pink">#232f71</color>
+    <color name="white">#ffffff</color>
+    <color name="themeBar">#232f71</color>
+    <color name="lightgray">#ededed</color>
+    <color name="green">#0e2d45</color>
+    <color name="yello">#31260b</color>
+
+</resources>

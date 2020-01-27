@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".create_cl_mail">
+
+    <include
+        layout="@layout/activity_bar"
+        android:id="@+id/bar_inscription_chauff"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_user_chauff"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/ic_mail_outline_black"
+            android:drawablePadding="10dp"
+            android:hint="Adresse mail"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/edit_insc_password_chauff"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_lock_outline"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/edit_noms_chauffeur"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_person_outline"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Nom et Prénom"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/edit_mat_voiture"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/card"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Matricule Carte Identité"
+            android:inputType="text"
+            />
+
+
+        <Button
+            android:textColor="#fff"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/style_general_color_btn"
+            android:layout_marginTop="40dp"
+            android:text="Inscription"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_inscr_chauff"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
